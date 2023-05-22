@@ -1,0 +1,39 @@
+// @import '../../assets/styles/variables/fonts.scss';
+
+.card {
+    &__container {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        z-index: 4;
+        left: 0;
+    }
+
+    &__text-box {
+        max-width: 230px;
+        position: absolute;
+        z-index: 100;
+        bottom: 20px;
+        left: 20px;
+
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        line-height: 19px;
+    }
+}

@@ -1,0 +1,53 @@
+.page-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+ body {
+    background-color: $color-bg;
+    font-weight: 400;
+    color: $color-white;
+    font-family: $font-text;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.sub-title {
+    color: $color-sub;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.3em;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-family: $font-title;
+}
+
+.title {
+    color: $color-white;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: $font-title;
+    text-transform: capitalize;
+    font-weight: 300;
+    @media (min-width: 1022px) {
+        font-size: 60px;
+      }
+}
+
+.text {
+    color: $color-text;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $font-text;
+}

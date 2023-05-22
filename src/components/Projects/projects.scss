@@ -1,0 +1,127 @@
+@import '../../assets/styles/variables/fonts.scss';
+@import '../../assets/styles/variables/colors.scss';
+
+.projects {
+
+    &__title {
+        margin-bottom: 30px;
+        @media (min-width: 1022px) {
+            margin-bottom: 70px;
+         }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 42px;
+        @media (min-width: 1022px) {
+           max-width: 700px; 
+        }
+    }
+
+    &__item:active {
+        color: $color-sub;
+        text-decoration: underline;
+    }
+
+    &__gallery {
+        position: relative;
+        padding-bottom: 600px;
+        @media (min-width: 1022px) {
+            display: none;
+        }
+    }
+
+    &__gallery-desk {
+        display: none;
+        @media (min-width: 1022px) {
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__img-desk{
+        @media (min-width: 1022px) {
+            max-width: 307px;
+            opacity: 100%;
+            :hover {
+                cursor: pointer;
+                transform: scale(1.9);
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        max-width: 48%;
+    }
+
+    .gallery2 {
+        right: 0;
+        top: 30px;
+    }
+
+    .gallery3 {
+        left: 5px;
+        top: 270px;
+    }
+
+    .gallery4 {
+        right: -5px;
+        top: 300px;
+    }
+
+    &__experience {
+        @media (min-width: 1022px) {
+            display: flex;
+            gap: 140px;
+            align-items: center;
+        }
+    }
+
+    &__experience-text {
+        @media (min-width: 1022px) {
+            order: 2;
+        }
+    }
+
+    &__experience-title {
+        margin-bottom: 30px;
+        @media (min-width: 1022px) {
+            max-width: 557px;
+            line-height: 70px;
+        }
+    }
+
+    &__perc-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        @media (min-width: 1022px) {
+            margin-bottom: 40px;
+            justify-content: flex-start;
+            gap: 70px;
+        }
+    }
+
+    &__number-perc {
+        color: $color-sub;
+        font-family: $font-title;
+        font-weight: 300;
+        font-size: 44px;
+        line-height: 70px;
+    }
+
+    &__scheme {
+        max-width: 100%;
+        margin-bottom: 100px;
+        @media (min-width: 1022px) {
+            max-width: 557px;
+        }
+    }
+    
+}

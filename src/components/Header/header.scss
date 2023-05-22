@@ -1,0 +1,82 @@
+@import '../../assets/styles/variables/fonts.scss';
+@import '../../assets/styles/variables/colors.scss';
+
+.header {
+    margin: 50px 0 73px 0;
+    @media (min-width: 1022px) {
+        margin-bottom: 150px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        @media (min-width: 1022px) {
+            justify-content: flex-start;
+            gap: 80px;
+            :hover {
+                cursor: pointer;
+                color: $color-sub;
+            }
+        }
+    }
+    &__vision {
+        display: none;
+        @media (min-width: 1022px) {
+            display: block;
+        }
+    }
+
+    &__menu {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-bg3;
+        opacity: 100%;
+        padding: 100%;
+        z-index: 200;
+        @media (min-width: 1022px) {
+            position: static;
+            background-color: transparent;
+            transform: translate(0);
+            padding: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        @media (min-width: 1022px) {
+            flex-direction: row;
+            gap: 25px;
+        }
+    }
+
+    &__item {
+        font-size: 30px;
+        @media (min-width: 1022px) {
+            font-size: 16px;
+            z-index: 1000;
+        }
+    }
+
+    &__item:active {
+        color: $color-sub;
+    }
+
+    &__btn {
+        @media (min-width: 1022px) {
+            display: none;
+        }
+    }
+
+}
+.close {
+    color: $color-text;
+    font-size: 40px;
+    order: 2;
+    z-index: 250;
+    position: fixed;
+    right: 30px;
+}

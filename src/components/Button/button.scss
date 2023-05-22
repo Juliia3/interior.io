@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables/fonts.scss';
+@import '../../assets/styles/variables/colors.scss';
+
+.button {
+    max-width: 200px;
+    border: 2px solid #ffffff;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    :active {
+        transform: scale(0.9);
+    }
+    @media (min-width: 768px) {
+        :hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+    &__text {
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        font-family: $font-text;
+    }
+}

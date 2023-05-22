@@ -1,0 +1,72 @@
+@import '../../assets/styles/variables/fonts.scss';
+@import '../../assets/styles/variables/colors.scss';
+
+.footer {
+    margin: 30px 0 0 0;
+    padding: 30px 0 20px 0;
+    background-color: $color-bg3;
+    @media (min-width: 1022px) {
+        margin: 100px 0 0 0;
+        padding: 70px 0 40px 0;
+    }
+
+    &__container {
+        @media (min-width: 1022px) {
+            display: flex;
+            gap: 250px;
+        }
+    }
+    
+    &__logo-box {
+        @media (min-width: 1022px) {
+            max-width: 350px;
+        }
+    }
+
+    &__logo {
+        width: 140px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        margin-bottom: 70px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__contacts {
+        max-width: 220px;
+        @media (min-width: 1022px) {
+            margin-left: 200px;
+        }
+    }
+
+    &__contacts-box {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+    }
+
+    &__item:active {
+        color: $color-sub;
+    }
+
+    &__rights {
+        border-top: 1px solid $color-text;
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+
+    &__orange {
+        color: $color-sub;
+    }
+}
