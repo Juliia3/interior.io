@@ -1,6 +1,3 @@
-import Header from "../components/Header/Header";
-// import "./studioPage.scss";
-
 function StudioPage() {
   return (
     <>
