@@ -21,11 +21,6 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
-    // <Routes>
-    //   <Route path="/" element={<Home />} />
-    //   <Route path="studio" element={<StudioPage />} />
-    //   <Route path="projects" element={<ProjectsPage />} />
-    // </Routes>
   );
 }
 
