@@ -2,6 +2,7 @@
   "name": "new",
   "version": "0.1.0",
   "homepage": "https://juliia3.github.io/interior.io",
+  "private": true,
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.5",
