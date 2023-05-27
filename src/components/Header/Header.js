@@ -35,17 +35,17 @@ function Header() {
           </button>
         ) : (
           <button onClick={handleManu} className="header__menu-btn">
-            <img className="header__btn" src={menu} />
+            <img className="header__btn" src={menu} alt="menu" />
           </button>
         )}
 
         <div className="header__vision" style={hideOrShow}>
           <nav className="header__menu">
             <ul className="header__list">
-              <Link to="studio">
+              <Link to="/studio" onClick={handleManu}>
                 <li className="header__item text">THE STUDIO</li>
               </Link>
-              <Link to="projects">
+              <Link to="/projects" onClick={handleManu}>
                 <li className="header__item text">PROJECTS</li>
               </Link>
               <li className="header__item text">ARCHITECTURE</li>
